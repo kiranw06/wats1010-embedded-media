@@ -5,6 +5,111 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
+html {
+	 padding: 0;
+	 -webkit-padding-start: 0px;
  }
+body {
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: sans-serif;
+}
+header {
+	background-image: url('../img/monkey_flight.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+	width: 1300px;
+}
+/* HEADER */
+h1 {
+	color: white;
+	font-family: 'Fredoka One', cursive, sans-serif;
+	font-size: 500%;
+	top: 5px;
+}
+nav {
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    font-family: sans-serif;
+    font-size: 130%;
+    top: 0;
+    width: 100%;
+}
+.subtitle {
+	visibility: hidden;
+}
+.main-nav {
+	list-style-type: none
+}
+.main-nav li {
+	display: inline-block
+}
+/* ASIDE */
+#social ul {
+	list-style-type: none;
+	padding: 0;
+	position: fixed;
+	top: 60px;
+}
+#social {
+	background-color: none;
+	position: absolute;
+	right: 0;
+	transition: 1s width;
+	width: 20px;
+}
+#social:hover {
+	width: 80px;
+}
+#social li {
+	margin: 0;
+	padding: 0;
+}
+/* SECTION */
+video {
+	width: 100%;
+}
+
+/* SECTION */
+h2 {
+	background-color: white;
+}
+/* LISTEN */
+#listen {
+	background-image: url('../img/monkaa_monkeyhang.png');
+	background-position: fixed;
+	background-repeat: none;
+	height: 400px;
+}
+#listen #audio {
+	background-color: white;
+	float: right;
+	height: 350px;
+    width: 400px;
+}
+/* ABOUT */
+ul.weybec-people {
+	display: block;
+	list-style-type: none;
+	width: 100%;
+	-webkit-padding-start: 0;
+}
+ul.weybec-people li {
+	display: inline-block;
+	padding-left: 15%;
+	font-family: sans-serif;
+	text-align: center;
+}
+li img.headshot {
+	height: 120px;
+	width: auto;
+}
+.headshot:hover {
+	height: 200px;
+	width: auto;
+/* TODO dropshadow	 */
+}
