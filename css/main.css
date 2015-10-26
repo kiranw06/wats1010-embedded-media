@@ -6,15 +6,48 @@
  *****************************************************************************/
 
 html {
-	 padding: 0;
-	 -webkit-padding-start: 0px;
- }
+	padding: 0;
+	-webkit-padding-start: 0px;
+}
+
+a {
+	color: #6BDCFF;
+	text-decoration: none;
+}
+a:active {
+	color: #FFA3A3;
+}
 body {
 	margin: 0;
 }
-h1,h2,h3,h4,h5,h6 {
-	font-family: sans-serif;
+
+.download-button {
+/* content */
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: 'Fredoka One', cursive, sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	background: #6bdcff;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+/* layout */
+	position: relative;
+	top: 20px;
+	margin-top: 10px;
+	border-bottom-width: 10px;
 }
+
+.download-button:hover {
+	background: #ffa3a3;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
 header {
 	background-image: url('../img/monkey_flight.png');
 	background-repeat: no-repeat;
@@ -28,33 +61,50 @@ h1 {
 	color: white;
 	font-family: 'Fredoka One', cursive, sans-serif;
 	font-size: 500%;
+	padding-left: 40px;
+	padding-right: 0;
 	top: 5px;
 }
+
 nav {
-    background-color: white;
-    margin: 0;
-    position: fixed;
-    font-family: sans-serif;
-    font-size: 130%;
-    top: 0;
-    width: 100%;
+	border: lightgray;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	background-color: white;
+	margin: 0;
+	position: fixed;
+	font-family: sans-serif;
+	font-size: 130%;
+	top: 0;
+	width: 100%;
+	z-index: 5;
 }
+
 .subtitle {
 	visibility: hidden;
 }
+
 .main-nav {
+	font-family: 'Fredoka One', cursive, sans-serif;
 	list-style-type: none
 }
+
 .main-nav li {
-	display: inline-block
+	display: inline-block;
+	padding-right: 20px;
 }
 /* ASIDE */
 #social ul {
+	font-family: 'Open Sans', sans-serif;
 	list-style-type: none;
-	padding: 0;
 	position: fixed;
 	top: 60px;
+	background: white;
+	text-align: left;
+	padding: 10px;
+	z-index: 5;
 }
+
 #social {
 	background-color: none;
 	position: absolute;
@@ -62,54 +112,185 @@ nav {
 	transition: 1s width;
 	width: 20px;
 }
+
 #social:hover {
-	width: 80px;
+	width: 100px;
 }
+
 #social li {
 	margin: 0;
 	padding: 0;
 }
+
 /* SECTION */
+#watch h2, #listen h2 {
+	border: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+	background-color: white;
+	padding-top: 20px;
+	padding-left: 0;
+	padding-right: 40px;
+	padding-bottom: 16px;
+	margin: 0;
+	text-align: right;
+}
+
+h3 {
+	margin-left: 40px;
+}
+
+p {
+	font-family: 'Antic Slab', serif;
+	margin-left: 40px;
+	padding-right: 40px;
+}
+/* WATCH */
 video {
 	width: 100%;
 }
 
-/* SECTION */
-h2 {
-	background-color: white;
+#watch h3, #watch p {
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+}
+
+#watch a.download-button {
+	margin-right: 60px;
 }
 /* LISTEN */
 #listen {
 	background-image: url('../img/monkaa_monkeyhang.png');
-	background-position: fixed;
+	background-position: bottom;
 	background-repeat: none;
-	height: 400px;
+	height: 500px;
 }
-#listen #audio {
-	background-color: white;
+
+aside {
 	float: right;
-	height: 350px;
-    width: 400px;
+}
+
+#listen #audio {
+	float: right;
+    /* background: white; */
+	height: 80px;
+	position: relative;
+	top: 340px;
+    /* width: 100%; */
+}
+
+p {
+	font-family: 'Antic Slab', serif;
+	margin-left: 40px;
+	padding-right: 40px;
+}
+
+audio {
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	position: relative;
+	width: 400px;
+}
+
+#watch a.download-button {
+	margin-right: 60px;
+}
+
+#audio a.download-button {
+	padding-left: 10px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 80px;
+	margin-right: 40px;
+	top: -17px;
 }
 /* ABOUT */
+#about h2 {
+	border: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 0;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	text-align: right;
+}
+#about {
+	position: relative;
+}
+
+#about aside {
+	position: relative;
+	width: 15%;
+}
+
+#about .about-text {
+	line-height: 2;
+	height: 550px;
+	width: 80%;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	color: graytext;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	margin: 1.5em 40px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+	text-align: center;
+}
+
 ul.weybec-people {
-	display: block;
+	position: relative;
+	float: right;
+	left: -20px;
 	list-style-type: none;
+	top: -15px;
 	width: 100%;
 	-webkit-padding-start: 0;
 }
+
 ul.weybec-people li {
-	display: inline-block;
 	padding-left: 15%;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-size: smaller;
+	line-height: 2;
 	text-align: center;
 }
+
 li img.headshot {
 	height: 120px;
 	width: auto;
 }
-.headshot:hover {
-	height: 200px;
-	width: auto;
-/* TODO dropshadow	 */
+
+.lead {
+	font-family: ;
+	font-size: x-large;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* FOOTER */
+footer p {
+/* border */
+	border: lightgray;
+	border-top-style: solid;
+	border-top-width: 5px;
+/* layout */
+	bottom: 0;
+	margin: 0;
+	padding: 16px;
+	position: relative;
+	width: 100%;
+/* content */
+	font-family: 'Open Sans', sans-serif;
+	font-size: smaller;
+	text-align: center;
 }
